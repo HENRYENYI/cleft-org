@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - fbhint.org</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="logo-section">
+                    <img src="media/image/logo.png" alt="fbhint.org Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>Foundation for Better Health International (<span class="fbihint">FBIHINT</span>)</h1>
+                        <p>Foundation for Better Health Initiatives</p>
+                    </div>
+                </div>
+                <a href="donate.html" class="help-btn">How You Can Help</a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i> <!-- Hamburger icon -->
+                </div>
+            </div>
+        </div>
+        <nav class="header-nav" id="main-nav">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    
+                    <li><a href="board.html">Board</a></li>
+                    <li><a href="activities.html">Activities So Far</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile-nav-toggle">
+        <span class="hamburger"></span>
+    </div>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="gallery.html">Gallery</a></li>
+            
+            <li><a href="board.html">Board</a></li>
+            <li><a href="activities.html">Activities So Far</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overlay"></div>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Moments that capture our mission in action</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="medical">Medical Care</button>
+                <button class="filter-btn" data-filter="community">Community</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="medical">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop" alt="Cleft surgery">
+                    <div class="gallery-overlay">
+                        <h3>Cleft Surgery</h3>
+                        <p>Life-changing procedures for children</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="community">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop" alt="Community outreach">
+                    <div class="gallery-overlay">
+                        <h3>Community Outreach</h3>
+                        <p>Reaching rural communities</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=300&fit=crop" alt="Fundraising event">
+                    <div class="gallery-overlay">
+                        <h3>Fundraising Event</h3>
+                        <p>Community support gathering</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="medical">
+                    <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=400&h=300&fit=crop" alt="Medical camp">
+                    <div class="gallery-overlay">
+                        <h3>Medical Camp</h3>
+                        <p>Free healthcare services</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="community">
+                    <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=300&fit=crop" alt="Training session">
+                    <div class="gallery-overlay">
+                        <h3>Training Session</h3>
+                        <p>Healthcare worker education</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop" alt="Awareness campaign">
+                    <div class="gallery-overlay">
+                        <h3>Awareness Campaign</h3>
+                        <p>Educating communities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
