@@ -1,3 +1,20 @@
+// Hide logo image and shrink navbar on scroll
+window.addEventListener('scroll', function() {
+    const logoImg = document.querySelector('.logo-img');
+    const headerTop = document.querySelector('.header-top');
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (currentScroll > 50) {
+        logoImg.style.opacity = '0';
+        logoImg.style.transform = 'scale(0)';
+        headerTop.style.padding = '0.3rem 0';
+    } else {
+        logoImg.style.opacity = '1';
+        logoImg.style.transform = 'scale(1)';
+        headerTop.style.padding = '0.8rem 0';
+    }
+});
+
 // Image slider functionality
 document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll('.slide');

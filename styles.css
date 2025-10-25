@@ -30,6 +30,7 @@ header {
     background: #ffffff;
     padding: 0.8rem 0; /* Increased padding for better spacing */
     border-bottom: 1px solid #e8f5e8;
+    transition: padding 0.3s ease;
 }
 
 .header-top .container {
@@ -43,6 +44,8 @@ header {
     display: flex;
     align-items: center;
     gap: 1rem;
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo-img {
@@ -55,6 +58,7 @@ header {
     justify-content: center;
     font-weight: bold;
     font-size: 14px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .logo-text h1 {
