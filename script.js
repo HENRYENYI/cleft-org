@@ -15,18 +15,14 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Image slider functionality
+// Hero slideshow functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const slides = document.querySelectorAll('.slide');
-    const indicators = document.querySelectorAll('.indicator');
+    const slides = document.querySelectorAll('.hero-slideshow .slide');
     let currentSlide = 0;
 
     function showSlide(index) {
         slides.forEach(slide => slide.classList.remove('active'));
-        indicators.forEach(indicator => indicator.classList.remove('active'));
-        
         slides[index].classList.add('active');
-        indicators[index].classList.add('active');
     }
 
     function nextSlide() {
@@ -34,16 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentSlide);
     }
 
-    // Auto-advance slides every 12 seconds
-    setInterval(nextSlide, 12000);
-
-    // Click indicators to change slides
-    indicators.forEach((indicator, index) => {
-        indicator.addEventListener('click', () => {
-            currentSlide = index;
-            showSlide(currentSlide);
-        });
-    });
+    // Auto-advance slides every 5 seconds
+    setInterval(nextSlide, 7000);
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
