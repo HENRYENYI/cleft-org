@@ -236,7 +236,7 @@ header {
     margin-left: calc(-50vw + 50%); /* Center a full-width element */
 }
 
-.hero-slideshow {
+.hero-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -245,20 +245,24 @@ header {
     z-index: 1;
 }
 
-.hero-slideshow .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
+.hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
 
-.hero-slideshow .slide.active {
-    opacity: 1;
+.hero-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hero-desktop {
+        display: none;
+    }
+    .hero-mobile {
+        display: block;
+    }
 }
 
 .hero::before {
